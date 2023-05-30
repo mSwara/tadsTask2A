@@ -1,0 +1,163 @@
+:root {
+    
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&family=Raleway&family=Red+Hat+Display:ital@1&display=swap');
+
+.attribution{
+    font-size: 11px; text-align: center; 
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+
+}
+
+header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.tt1 {
+
+    color: var(--Grayish-Blue);
+    margin-top: 2rem;
+    font-weight: 220;
+    font-size: 1.2rem;
+}
+
+.tt2 {
+
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.tp {
+
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--Grayish-Blue);
+}
+
+.flexy {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contit {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 420;
+}
+
+.contdesc {
+    margin-top: 0.7rem;
+    margin-bottom: 3.2rem;
+    margin-left: 1.2rem;
+    margin-right: 3.2rem;
+    color: var(--Grayish-Blue);
+}
+
+.square {
+    position: relative;
+    height: 15rem;
+    width: 82vw;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+hr {
+    height: 7px;
+    width: 100%;
+}
+.supc {
+    background-color: var(--Cyan);
+}
+.teamcont {
+    background-color: var(--Red);
+}
+.karmacont {
+    background-color: var(--Orange);
+}
+.Calccont {
+    background-color: var(--Blue);
+}
+img {
+
+    width: 12vw;
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+}
+
+
+
+@media(min-width:42em) {
+
+    .tp {
+
+        margin-left: 3.2rem;
+        margin-right: 2.2rem;
+        text-align: justify;
+    }
+    .square {
+        width: 72vw;
+    }
+}
+
+
+
+@media(min-width:62em) {
+
+    .flexy {
+        flex-direction: row;
+    }
+
+    .tt1 {
+        font-size: 2.2rem;
+    }
+    .tt2 {
+        font-size: 2.2rem;
+    }
+    .tp {
+        font-size: 1rem;
+        margin-left: 32vw;
+        margin-right: 32vw;
+        text-align: center;
+    }
+    .square {
+
+        width: 375px;
+        margin: 0.5rem;
+    }
+    img {
+        width: 4.2vw;
+    }
+}
